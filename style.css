@@ -140,10 +140,11 @@ main {
 
 .monogram {
   display: block;
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   background: var(--cobalt);
 }
 
@@ -495,9 +496,8 @@ section {
 
   .monogram {
     grid-row: span 2;
-    width: 3.25rem;
-    height: 3.25rem;
-    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .id-name {
