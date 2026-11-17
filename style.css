@@ -7,11 +7,11 @@
 :root {
   --paper: #f4f6fa;
   --surface: #ffffff;
-  --ink: #7e3615;
-  --muted: #db904a;
+  --ink: #3b1a0b;
+  --muted: #221509;
   --line: #d8deea;
   --cobalt: #502b09;
-  --cobalt-deep: #4d2c11;
+  --cobalt-deep: #774720;
   --tint: #e8ecff;
 
   --font-head: "Bebas Neue", "Segoe UI", system-ui, sans-serif;
