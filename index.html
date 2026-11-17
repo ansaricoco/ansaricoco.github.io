@@ -3,97 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coco | E-Portfolio</title>
-  <meta name="description" content="E-portfolio and resume of Coco: education, projects, certifications, skills, and contact details.">
-  <meta name="theme-color" content="#2b44d9">
+  <title>Coco | Portfolio</title>
+  <meta name="description" content="Portfolio and resume of Coco: a 4th year Computer Science student building cross-platform apps. Projects, education, certifications, and contact details.">
+  <meta name="theme-color" content="#0b1020">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="layout">
-
-    <!-- Left rail: identity, navigation, quick links -->
-    <aside class="rail">
-      <div class="rail-inner">
-        <div class="id">
-          <img class="monogram" src="images/coco.jpg" alt="Photo of Coco">
-          <p class="id-name">Coco</p>
-          <p class="id-role">Student developer</p>
-        </div>
-
-        <nav class="nav" aria-label="Primary">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <ul class="rail-links">
-          <li><a href="https://github.com/ansaricoco" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/aealipiii" rel="noopener">LinkedIn</a></li>
-          <li><a href="mailto:ansarifranco3rd@gmail.com">Email</a></li>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#about">~/coco</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about"><span class="num">01.</span>About</a></li>
+          <li><a href="#projects"><span class="num">02.</span>Projects</a></li>
+          <li><a href="#skills"><span class="num">03.</span>Education</a></li>
+          <li><a href="#certifications"><span class="num">04.</span>Certifications</a></li>
+          <li><a href="#contact"><span class="num">05.</span>Contact</a></li>
         </ul>
-      </div>
-    </aside>
+      </nav>
+    </div>
+  </header>
 
-    <main id="main">
+  <main id="main">
 
-      <!-- HOME / ABOUT -->
-      <section id="about" class="hero">
-        <h1>Hi, I’m Coco. I am a 4th year CS student looking for Internship opportunities.</h1>
-        <p class="lede">
-          Motivated Computer Science student with strong problem-solving, analytical, and critical-thinking skills.
-           A quick learner who thrives in unfamiliar situations, and a commited one to keep learning and deliver practical,
-efficient results.
-        </p>
-        <p>
+    <!-- HERO -->
+    <section class="hero wrap" aria-labelledby="hero-name">
+      <div class="hero-text">
+        <p class="hello">Hi, my name is</p>
+        <h1 id="hero-name">Coco.</h1>
+        <p class="tagline">I build cross-platform apps.</p>
+        <p class="intro">
+          Computer Science student specializing in Software Engineering, looking for internship opportunities.
           I like working hands-on: designing the structure, writing the code, testing it, and fixing what breaks.
-          I’m currently looking for internship opportunities where I can keep learning and ship real work.
         </p>
+        <p class="actions">
+          <a class="btn" href="#projects">View my work</a>
+          <a class="btn btn-quiet" href="Alip_RESUME.pdf">Download resume</a>
+          <a class="btn btn-quiet" href="#contact">Contact me</a>
+        </p>
+      </div>
+
+      <div class="portrait">
+        <img src="images/coco.jpg" alt="Photo of Coco" width="400" height="400">
+      </div>
+    </section>
+
+    <!-- 01 ABOUT -->
+    <section id="about" class="block wrap">
+      <h2><span class="num">01.</span>About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a 4th year Computer Science student with strong problem-solving, analytical, and critical-thinking skills.
+            I learn quickly in unfamiliar situations, and I am committed to learning more and delivering practical, efficient results.
+          </p>
+          <p>
+            My main tools are Flutter and Dart, with C++ and Python for coursework and certifications.
+            My thesis, ByteSized, is a cross-platform image-compression app that I am building from the architecture to the final build.
+          </p>
+          <p>
+            I am currently looking for internship opportunities where I can keep learning and ship real work.
+          </p>
+        </div>
 
         <dl class="facts">
           <div><dt>Based in</dt><dd>Quezon City, Philippines</dd></div>
-          <div><dt>Studying</dt><dd>Computer Science with Specialization in Software Engineering, FEU Institute of Technology</dd></div>
+          <div><dt>Studying</dt><dd>BS Computer Science, Software Engineering, FEU Institute of Technology</dd></div>
           <div><dt>Main tools</dt><dd>Flutter, Dart, VS Code, C++, Python</dd></div>
           <div><dt>Open to</dt><dd>Internships</dd></div>
         </dl>
+      </div>
+    </section>
 
-        <p class="actions">
-          <a class="btn" href="Alip_RESUME.pdf">Download resume (PDF)</a>
-          <a class="btn btn-quiet" href="#contact">Get in touch</a>
-        </p>
-      </section>
+    <!-- 02 PROJECTS -->
+    <section id="projects" class="block wrap">
+      <h2><span class="num">02.</span>Some things I've built</h2>
 
-      <!-- EDUCATION -->
-      <section id="education" class="block">
-        <h2>Education</h2>
-
-        <article class="entry">
-          <p class="when">2023 to 2027</p>
-          <div class="what">
-            <h3>Computer Science with Specialization in Software Engineering</h3>
-            <p class="where">FEU Institute of Technology</p>
-            <p>
-              Thesis: ByteSized, a cross-platform image-compression app built with Flutter and Dart.
-            </p>
-          </div>
-        </article>
-
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects" class="block">
-        <h2>Projects</h2>
-
+      <div class="project-grid">
         <article class="project">
           <div class="project-head">
             <h3>ByteSized</h3>
@@ -101,9 +93,7 @@ efficient results.
           </div>
           <p>
             A cross-platform image-compression app built with Flutter and Dart.
-            It reduces image file sizes and reconstructs them using developer
-             so photos are easier to store and share,
-            using one codebase across platforms.
+            It reduces image file sizes and reconstructs them, so photos are easier to store and share, using one codebase across platforms.
           </p>
           <ul class="tags" aria-label="Technologies used">
             <li>Flutter</li>
@@ -111,143 +101,142 @@ efficient results.
             <li>Image compression</li>
             <li>Cross-platform</li>
           </ul>
-          <p class="links">
-            <a href="https://github.com/ansaricoco/bytesized">ByteSized on GitHub</a>
-          </p>
+          <p class="links"><a href="https://github.com/ansaricoco/bytesized">ByteSized on GitHub</a></p>
         </article>
 
-    
         <article class="project">
           <div class="project-head">
             <h3>CampusFinder</h3>
-            <p class="badge">Application Development Side Project</p>
+            <p class="badge">Side project</p>
           </div>
-          <p>A website for campuses to report lost and found items real-time.</p>
-          <p class="links"><a href="[link]">CampusFinder on GitHub</a></p>
+          <p>
+            A website where campuses report lost and found items in real time.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>Web app</li>
+            <li>Real-time updates</li>
+          </ul>
+          <!-- Replace this link with the CampusFinder repo URL -->
+          <p class="links"><a href="https://github.com/ansaricoco">CampusFinder on GitHub</a></p>
         </article>
-      
-      </section>
+      </div>
+    </section>
 
-      <!-- CERTIFICATIONS -->
-      <section id="certifications" class="block">
-        <h2>Certifications</h2>
+    <!-- 03 EDUCATION & SKILLS -->
+    <section id="skills" class="block wrap">
+      <h2><span class="num">03.</span>Education &amp; skills</h2>
 
-        <article class="entry">
-          <p class="when">2026</p>
-          <div class="what">
-            <h3>PMI Project Management Ready™</h3>
-            <p class="where">Project Management Institute</p>
-            <p><a href="https://www.credly.com/badges/1532b042-cb56-40c4-9306-dd429bd19d33/public_url">Verify credential</a></p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="when">2025</p>
-          <div class="what">
-            <h3>IT Specialist - Python</h3>
-            <p class="where">Certiport</p>
-            <p><a href="https://www.credly.com/badges/bd23ab57-c47d-43cd-8e0f-15f5b7d2b34c/public_url">Verify credential</a></p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="when">2025</p>
-          <div class="what">
-            <h3>MATLAB Onramp</h3>
-            <p class="where">MathWorks</p>
-            <p><a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=7137dd1b-2801-4c73-a070-651ae0638e34&">Verify credential</a></p>
-          </div>
-        </article>
-
-        <article class="entry">
-          <p class="when">2025</p>
-          <div class="what">
-            <h3>Agile Software Development</h3>
-            <p class="where">LinkedIn Learning</p>
-          </div>
-        </article>
-
-         <article class="entry">
-          <p class="when">2025</p>
-          <div class="what">
-            <h3>Using Git with Visual Studio Code</h3>
-            <p class="where">LinkedIn Learning</p>
-          </div>
-        </article>
-
-         <article class="entry">
-          <p class="when">2025</p>
-          <div class="what">
-            <h3>CCNA: Introduction to Networks</h3>
-            <p class="where">Cisco Networking Academy</p>
-          </div>
-        </article>
-      </section>
-
-
-      <!-- SKILLS -->
-      <section id="skills" class="block">
-        <h2>Skills</h2>
-
-        <div class="skill-groups">
-          <div class="skill-group">
-            <h3>App development</h3>
-            <ul>
-              <li>Flutter</li>
-              <li>Dart</li>
-              <li>Cross-platform app design</li>
-              <li>Image processing basics</li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3>Tools</h3>
-            <ul>
-              <li>VS Code</li>
-              <li>Git and GitHub</li>
-              <li>HTML and CSS</li>
-              <li>Windows development</li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3>Currently learning</h3>
-            <ul>
-              <li>Cybersecurity fundamentals</li>
-              <li>IT and networking</li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3>Working style</h3>
-            <ul>
-              <li>Hands-on problem solving</li>
-              <li>Technical writing</li>
-              <li>Research and documentation</li>
-            </ul>
-          </div>
+      <div class="skills-grid">
+        <div class="panel">
+          <h3 class="panel-title">Academic background</h3>
+          <h4>BS Computer Science</h4>
+          <p class="sub">Specialization in Software Engineering</p>
+          <p class="where">FEU Institute of Technology | 2023 to 2027</p>
+          <p>Thesis: ByteSized, a cross-platform image-compression app built with Flutter and Dart.</p>
         </div>
-      </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="block">
-        <h2>Contact</h2>
-        <p class="lede">
-          Want to talk about an opportunity, a project, or my thesis work? Email is the fastest way to reach me.
-        </p>
+        <div class="panel">
+          <h3 class="panel-title">Technical arsenal</h3>
 
-        <ul class="contact-list">
-          <li><span>Email</span><a href="mailto:ansarifranco3rd@gmail.com">ansarifranco3rd@gmail.com</a></li>
-          <li><span>GitHub</span><a href="https://github.com/ansaricoco" rel="noopener">github.com/ansaricoco</a></li>
-          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/aealipiii/" rel="noopener">linkedin.com/in/aealipiii</a></li>
-        </ul>
-      </section>
+          <h4 class="mono-label"># Languages</h4>
+          <ul class="chips">
+            <li>Dart</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML and CSS</li>
+          </ul>
 
-      <footer class="footer">
-        <p>© 2026 by Coco.</p>
-      </footer>
+          <h4 class="mono-label"># Frameworks &amp; tools</h4>
+          <ul class="chips">
+            <li>Flutter</li>
+            <li>VS Code</li>
+            <li>Git and GitHub</li>
+            <li>Windows development</li>
+          </ul>
 
-    </main>
-  </div>
+          <h4 class="mono-label"># Currently learning</h4>
+          <ul class="chips">
+            <li>Cybersecurity fundamentals</li>
+            <li>IT and networking</li>
+          </ul>
+
+          <h4 class="mono-label"># Working style</h4>
+          <ul class="chips">
+            <li>Hands-on problem solving</li>
+            <li>Technical writing</li>
+            <li>Research and documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 CERTIFICATIONS -->
+    <section id="certifications" class="block wrap">
+      <h2><span class="num">04.</span>Certifications and completed courses</h2>
+
+      <ul class="cert-grid">
+        <li class="cert">
+          <p class="year">2026</p>
+          <h3>PMI Project Management Ready</h3>
+          <p class="issuer">Project Management Institute</p>
+          <a href="https://www.credly.com/badges/1532b042-cb56-40c4-9306-dd429bd19d33/public_url">Verify credential</a>
+        </li>
+
+        <li class="cert">
+          <p class="year">2025</p>
+          <h3>IT Specialist: Python</h3>
+          <p class="issuer">Certiport</p>
+          <a href="https://www.credly.com/badges/bd23ab57-c47d-43cd-8e0f-15f5b7d2b34c/public_url">Verify credential</a>
+        </li>
+
+        <li class="cert">
+          <p class="year">2025</p>
+          <h3>MATLAB Onramp</h3>
+          <p class="issuer">MathWorks</p>
+          <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=7137dd1b-2801-4c73-a070-651ae0638e34&amp;">Verify credential</a>
+        </li>
+
+        <li class="cert">
+          <p class="year">2025</p>
+          <h3>CCNA: Introduction to Networks</h3>
+          <p class="issuer">Cisco Networking Academy</p>
+        </li>
+
+        <li class="cert">
+          <p class="year">2025</p>
+          <h3>Agile Software Development</h3>
+          <p class="issuer">LinkedIn Learning</p>
+        </li>
+
+        <li class="cert">
+          <p class="year">2025</p>
+          <h3>Using Git with Visual Studio Code</h3>
+          <p class="issuer">LinkedIn Learning</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 05 CONTACT -->
+    <section id="contact" class="block wrap contact">
+      <h2><span class="num">05.</span>What's next?</h2>
+      <h3 class="contact-title">Get in touch</h3>
+      <p>
+        Whether you want to talk about an internship, a project, or my thesis work, email is the fastest way to reach me.
+        I will do my best to get back to you.
+      </p>
+      <p class="actions">
+        <a class="btn" href="mailto:ansarifranco3rd@gmail.com">Say hello</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="social">
+      <li><a href="https://github.com/ansaricoco" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/aealipiii/" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:ansarifranco3rd@gmail.com">Email</a></li>
+    </ul>
+    <p>© 2026 Coco</p>
+  </footer>
 </body>
 </html>
