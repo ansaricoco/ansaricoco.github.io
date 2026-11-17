@@ -139,16 +139,12 @@ main {
 }
 
 .monogram {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 50%;
+  object-fit: cover;
   background: var(--cobalt);
-  color: #fff;
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.75rem;
 }
 
 .nav ul {
